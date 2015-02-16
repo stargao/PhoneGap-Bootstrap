@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+    <link href="css/jquery.mobile-1.4.5.css" rel="stylesheet" />
+    <link href="css/dianlike.css" rel="stylesheet" />
+    <title>Homepage</title>
+</head>
+<body>
+    <div data-role="page"> 
+        <div data-role="header" data-position="fixed" class="page-header">
+            <h1>Homepage</h1>
+            <a href="../" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+            <a href="#popupMenu" data-rel="popup" data-transition="slidedown" class="ui-btn ui-btn-right ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-gear">Options</a>
+            <div data-role="popup" id="popupMenu" data-theme="a">
+                <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                    <li data-role="list-divider">Choose an action</li>
+                    <li><a href="#">User Center</a></li>
+                    <li><a href="#">My Shopping Cart</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </div><!-- /header -->
+        <div class="ui-grid-solo">
+            <a href="events-list.html" data-transition="slide">
+                <img src="img/banner.png" class="banner-img">
+            </a>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><a href="product-list.html" data-transition="slide" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-left">Category 1</a></div>
+                <div class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-heart ui-btn-icon-left">Category 2</a></div>
+                <div class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-left">Category 3</a></div>
+                <div class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-left">Category 4</a></div>
+                <div class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-left">Category 5</a></div>
+                <div class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-power ui-btn-icon-left">Category 6</a></div>
+            </div>
+        </div><!-- /content -->
+        <!--div data-role="footer" data-position="fixed">
+            <h4>&copy; 2014 dianlike.com</h4>
+        </div--><!-- /footer -->
+    </div><!-- /page -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="javascript/jquery.mobile-1.4.5.js"></script>
+</body>
+</html>

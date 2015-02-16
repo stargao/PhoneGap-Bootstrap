@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Select Delivery Address</title>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-position="fixed" class="page-header">
+        <h1>Select Delivery Address</h1>
+        <a href="../"  data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+        <form method="post">
+            <fieldset data-role="fieldcontain">
+                <label for="">Select Delivery Address:</label>
+                <a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-btn-icon-right ui-btn-a">
+                    <div class="ui-grid-solo">
+                        <div class="ul-block-a delivery-address-wrap">
+                            <p class="custom-name">Jone Cathy</p>
+                            <p class="custom-phone">13888888888</p>
+                            <span class="delivery-address">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</span>
+                        </div>
+                    </div>
+                </a>
+                <div data-role="popup" id="popupMenu" data-theme="a">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="list-divider">Choose an action</li>
+                        <li>
+                            <a href="#">
+                                <div class="ui-grid-solo">
+                                    <div class="ul-block-a delivery-address-wrap">
+                                        <p class="custom-name">Katy Lost</p>
+                                        <p class="custom-phone">13888866666</p>
+                                        <span class="delivery-address">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="ui-grid-solo">
+                                    <div class="ul-block-a delivery-address-wrap">
+                                        <p class="custom-name">Kevin Donta</p>
+                                        <p class="custom-phone">13888889999</p>
+                                        <span class="delivery-address">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div data-role="fieldcontain" class="ui-field-contain">
+                    <a href="add-new-delivery-address.html" class="ui-btn ui-corner-all ui-icon-plus ui-btn-shadow ui-btn-icon-left">Add new delivery address</a>
+                </div>
+            </fieldset>
+        </form>
+    </div><!-- /content -->
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="right">
+            <ul>
+                <li>
+                    <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" data-icon="carat-r">Submit Order</a>
+                    <div data-role="popup" id="popupBasic">
+                        <p>Your order has been submitted successfully.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

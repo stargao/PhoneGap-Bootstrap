@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+  <link href="css/jquery.mobile-1.4.5.css" rel="stylesheet" />
+  <link href="css/dianlike.css" rel="stylesheet" />
+  <title>Sign-up Page</title>
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header" data-position="fixed" class="page-header">
+      <h1>Sign Up</h1>
+      <a href="../"  data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+      <form>
+        <fieldset data-role="controlgroup">
+          <legend>Your Name:</legend>
+          <label for="nameInput">Your name:</label>
+          <input type="text" name="nameInput" id="nameInput" placeholder="Please input your name" value="">
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>Your sex:</legend>
+          <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked">
+          <label for="radio-choice-h-2a">Male</label>
+          <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="off">
+          <label for="radio-choice-h-2b">Female</label>
+        </fieldset>
+        <fieldset data-role="controlgroup">
+          <legend>Birthday:</legend>
+          <label for="birthday">Birthday:</label>
+          <input type="date" name="birthday" id="birthday">
+        </fieldset>
+        <fieldset data-role="controlgroup">
+          <legend>Phone Number:</legend>
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" name="phoneNumber" id="phoneNumber">
+        </fieldset>
+        <fieldset data-role="controlgroup">
+          <legend>Your Salary Rate:</legend>
+          <div data-role="rangeslider" data-mini="true">
+            <label for="range-2a">Mini rangeslider:</label>
+            <input type="range" name="range-2a" id="range-2a" min="3000" max="8000" value="4000" step="500">
+            <label for="range-2b">Mini rangeslider:</label>
+            <input type="range" name="range-2b" id="range-2b" min="8000" max="15000" value="12000" step="500">
+          </div>
+        </fieldset>
+        <fieldset data-role="controlgroup">
+          <div class="ui-field-contain">
+            <label for="select-native-1">Your City:</label>
+            <select name="select-native-1" id="select-native-1">
+              <option value="1">Chengdu</option>
+              <option value="2">Beijing</option>
+              <option value="3">Chongqing</option>
+              <option value="4">Kunming</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset data-role="controlgroup">
+          <label>
+            <input type="checkbox" name="checkbox-0">Agree to our terms
+          </label>
+        </fieldset>
+        <fieldset data-role="controlgroup">
+          <button class="ui-btn ui-corner-all ui-shadow">Done</button>
+        </fieldset>
+      </form>
+    </div><!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy; 2014 dianlike.com</h4>
+    </div><!-- /footer -->
+  </div><!-- /page -->
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="javascript/jquery.mobile-1.4.5.js"></script>
+</body>
+</html>

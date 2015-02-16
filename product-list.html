@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+    <link href="css/jquery.mobile-1.4.5.css" rel="stylesheet" />
+    <link href="css/dianlike.css" rel="stylesheet" />
+    <title>Product List</title>
+</head>
+<body>
+    <div data-role="page"> 
+        <div data-role="panel" id="filterPanel" data-position="right" data-dismissible="false" data-theme="a">
+            <h3>Product Filter</h3>
+            <form>
+                <fieldset data-role="controlgroup">
+                  <legend>Delivery Type:</legend>
+                  <select name="deliveryType" id="deliveryType">
+                    <option value="1">Delivery</option>
+                    <option value="2">Pick Up</option>
+                </select>
+              </fieldset>
+              <fieldset data-role="controlgroup">
+                  <legend>Have Stock:</legend>
+                  <input type="checkbox" data-role="flipswitch" name="displayStock" id="displayStock" data-on-text="Yes" data-off-text="No" data-wrapper-class="custom-size-flipswitch">
+              </fieldset>
+              <a href="#my-header" data-role="button" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left">Save</a>
+            </form>
+          </div><!-- /panel -->
+          <div data-role="header" data-position="fixed" class="page-header">
+            <h1>Product List</h1>
+            <a href="../" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+            <a href="#filterPanel" data-rel="popup" data-transition="slidedown" class="ui-btn ui-btn-right ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-bars">Filter</a>
+        </div><!-- /header -->
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-split-icon="shop" data-split-theme="a" data-inset="true" data-filter="true" data-filter-placeholder="Search fruits...">
+                <li>
+                    <a href="product-details.html">
+                        <img src="img/product-img.jpg">
+                        <h2>Broken Bells</h2>
+                        <p>$2.98</p>
+                    </a>
+                    <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+                </li>
+                <li>
+                    <a href="product-details.html">
+                        <img src="img/product-img.jpg">
+                        <h2>Warning</h2>
+                        <p>$12.00</p>
+                    </a>
+                    <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+                </li>
+                <li>
+                    <a href="product-details.html">
+                        <img src="img/product-img.jpg">
+                        <h2>Wolfgang Amadeus Phoenix</h2>
+                        <p>$0.99</p>
+                    </a>
+                    <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+                </li>
+                <li>
+                    <a href="product-details.html">
+                        <img src="img/product-img.jpg">
+                        <h2>Broken Bells</h2>
+                        <p>$2.98</p>
+                    </a>
+                    <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+                </li>
+                <li>
+                    <a href="product-details.html">
+                        <img src="img/product-img.jpg">
+                        <h2>Warning</h2>
+                        <p>$12.00</p>
+                    </a>
+                    <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+                </li>
+            </ul>
+            <div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="a" data-close-btn="right" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <div class="ui-grid-solo">
+                    <img src="img/product-img.jpg" class="single-product-img">
+                </div>
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-a ui-icon-check ui-btn-icon-left ui-mini">Buy: $10.99</a>
+            </div>
+        </div><!-- /content -->
+        <!--div data-role="footer" data-position="fixed">
+            <h4>&copy; 2014 dianlike.com</h4>
+        </div--><!-- /footer -->
+    </div><!-- /page -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="javascript/jquery.mobile-1.4.5.js"></script>
+</body>
+</html>

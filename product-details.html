@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+    <link href="css/jquery.mobile-1.4.5.css" rel="stylesheet" />
+    <link href="css/dianlike.css" rel="stylesheet" />
+    <title>Product Details</title>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-position="fixed" class="page-header">
+        <h1>Product Details</h1>
+        <a href="../" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+        <div class="ui-grid-solo">
+            <img src="img/product-img.jpg" class="single-product-img">
+        </div>
+
+    </div><!-- /content -->
+    <div data-role="footer" data-position="fixed">
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a">
+                <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <a href="#" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
+                    <a href="#" class="ui-btn ui-state-disabled">1</a>
+                    <a href="#" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
+                </div>
+            </div>
+            <div class="ui-block-b" align="center">
+                <button class="ui-btn ui-icon-shop ui-btn-icon-left">Buy: $12.90</button>
+            </div>
+        </fieldset>
+    </div><!-- /footer -->
+</div><!-- /page -->
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="javascript/jquery.mobile-1.4.5.js"></script>
+</body>
+</html>

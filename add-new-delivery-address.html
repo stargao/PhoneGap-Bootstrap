@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Add new delivery address</title>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-position="fixed" class="page-header">
+        <h1>Add New Delivery Address</h1>
+        <a href="../"  data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+        <form method="post">
+            <div data-role="fieldcontain" class="ui-field-contain">
+                <label for="consignee-name">Consignee Name</label>
+                <input type="text" name="text" id="consignee-name" value="" placeholder="" class="ui-input-text ui-corner-all ui-btn-shadow">
+            </div>
+            <div data-role="fieldcontain" class="ui-field-contain">
+                <label for="consignee-phone">Consignee Phone</label>
+                <input type="text" name="text" id="consignee-phone" value="" placeholder="" class="ui-input-text ui-corner-all ui-btn-shadow">
+            </div>
+            <div data-role="fieldcontain" class="ui-field-contain">
+                <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow">Validate phone number</a>
+                <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="a" data-dismissible="true" style="max-width:400px;">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <div data-role="header" data-theme="a">
+                        <h1>Validate phone number</h1>
+                    </div>
+                    <div role="main" class="ui-content">
+                        <h3 class="ui-title">Input validate code please.</h3>
+                        <div data-role="fieldcontain" class="ui-field-contain">
+                            <label for="validate-code" class="ui-hidden-accessible">Consignee Phone</label>
+                            <input type="text" name="text" id="validate-code" value="" placeholder="" class="ui-corner-all ui-btn-shadow ui-input-text">
+                        </div>
+                        <div data-role="fieldcontain" class="ui-field-contain">
+                            <button class="ui-btn ui-corner-all ui-btn-shadow" data-rel="back">Done</button>
+                        </div>
+                </div>
+            </div>
+            <div data-role="fieldcontain" class="ui-field-contain">
+                <label for="consignee-address-city">Consignee Address - City & County</label>
+                <input type="text" name="text" id="consignee-address-city" value="Chengdu Qingyang Guojiahuating buliding" placeholder="" class="ui-input-text ui-corner-all ui-btn-shadow" disabled="disabled">
+            </div>
+            <div data-role="fieldcontain" class="ui-field-contain">
+                <label for="consignee-address-room">Consignee Address - Room</label>
+                <input type="text" name="text" id="consignee-address-room" value="" placeholder=" " class="ui-input-text ui-corner-all ui-btn-shadow">
+            </div>
+        </form>
+    </div><!-- /content -->
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="../" data-transition="slide" data-icon="carat-l" data-rel="back">Done</a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

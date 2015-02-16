@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Select Product</title>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-position="fixed" class="page-header">
+        <h1>Select Product</h1>
+        <a href="../"  data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+        <form method="post">
+            <fieldset data-role="fieldcontain">
+                <label for="select-native-1">Select Product:</label>
+                <select name="select-native-1" id="select-native-1">
+                    <option value="1">Product 1</option>
+                    <option value="2">product 2</option>
+                    <option value="3">product 3</option>
+                    <option value="4">product 4</option>
+                </select>
+                <label for="">Product count:</label>
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <div data-role="controlgroup" data-type="horizontal">
+                            <a href="#" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
+                            <a href="#" class="ui-btn ui-state-disabled">1</a>
+                            <a href="#" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div data-role="fieldcontain" class="ui-field-contain">
+                    <a href="#" class="ui-btn ui-corner-all ui-icon-plus ui-btn-shadow ui-btn-icon-left">Add another product</a>
+                </div>
+            </fieldset>
+        </form>
+    </div><!-- /content -->
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="right">
+            <ul>
+                <li>
+                    <a href="select-delivery-address.html" data-transition="fade" data-icon="carat-r">Select delivery address</a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>
